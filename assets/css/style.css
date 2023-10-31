@@ -75,7 +75,7 @@ background-color:darkslategray;
   justify-content:flex-end;
   align-items: center;
   background-size: cover;
-  background-image:url("../assets/images/codioful.png");
+  background-image:url(../assets/images/codioful.png);
   background-repeat: no-repeat;
   height:150px;
   width:100%;
