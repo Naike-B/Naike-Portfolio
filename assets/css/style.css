@@ -63,7 +63,7 @@ background-color:darkslategray;
   color: aliceblue; 
   padding:10px;
 }
-/* Size and margin of Main logo*/
+/* Font size and margin of Main logo*/
 .main-logo{
   font-size: 25px;
   margin: 5px;
@@ -109,28 +109,28 @@ background-color:darkslategray;
 }
 
 /* Grid CSS */ 
-
+/* Grid container */ 
 .page-wrapper {
   display:flex;
   flex-direction:column;
   align-content: center;
   width: 100%;
 }
-
+/* About section - Flexbox*/ 
 .aboutMe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 90%; /* Adjust this value as needed */
-  margin: 0 auto; /* Center the section horizontally */
+  max-width: 90%; 
+  margin: 0 auto; 
 }
-
+/* About heading position and margin top and bottom */ 
 #aboutHeading {
   order:1;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+/* About paragraph */ 
 #aboutParagraph {
   display: flex;
   justify-content: center;
@@ -138,11 +138,11 @@ background-color:darkslategray;
   padding:20px;
   border-top: 3px darkslategray solid;
 }
-
+/* Grid container of Projects with structure defined and border top width and color */ 
 .projectsGrid {
   display:grid;
-  max-width: 90%; /* Adjust this value as needed */
-  margin: 0 auto; /* Center the section horizontally */
+  max-width: 90%; 
+  margin: 0 auto; 
   padding:20px;
   border-top: 3px darkslategray solid;
   gap:10px;
@@ -156,14 +156,14 @@ background-color:darkslategray;
   "project4"
   ;
 }
-
+/* Heading of Work section */ 
 #workHeading {
   display: grid;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+/* Main project - different size compared to other projecs - image source and border radius  */ 
 #featured-project {
   grid-area: featured-project;
   background-image: url("../../assets/images/horiseon.png");
@@ -171,7 +171,7 @@ background-color:darkslategray;
   background-repeat: no-repeat;
   border-radius: 8px;
 }
-
+/* Project 1 image source and border radius  */ 
 #project1 {
   grid-area: project1;
   background-image: url("../../assets/images/study-guide-console-snap.png");
@@ -179,7 +179,7 @@ background-color:darkslategray;
   background-size: cover;
   border-radius: 8px;
 }
-
+/* Project 2 image source and border radius  */
 #project2 {
   grid-area: project2;
   background-image:url("../../assets/images/02-portfolio-1.jpg");
@@ -187,7 +187,7 @@ background-color:darkslategray;
   background-size: cover;
   border-radius: 8px;
 }
-
+/* Project 3 image source and border radius  */
 #project3 {
   grid-area:project3;
   background-image:url("../../assets/images/surfer.jpeg");
@@ -195,7 +195,7 @@ background-color:darkslategray;
   background-size: cover;
   border-radius: 8px;
 }
-
+/* Project 4 image source and border radius  */
 #project4 {
   grid-area:project4;
   background-image: url("../../assets/images/02-run-buddy.jpg");
@@ -203,11 +203,11 @@ background-color:darkslategray;
   background-size: cover;
   border-radius: 8px;
 }
-
+/* Grid links no decoration  */
 .projectsGrid a {
   text-decoration: none;
 }
-
+/* Headings of projects - Flexbox, margin, padding and color  */
 .heading, 
 .headingFeatProject {
   display:flex;
@@ -218,28 +218,28 @@ background-color:darkslategray;
   color: darkslategray;
   display: block;
 }
-
+/* Contact me - Flexbox  */
 .contactMe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+/* Contact heading order and margin  */
 .contactHeading {
   order:1;
   margin-top: 10px;
 }
-
+/* Contact links - Flexbox content positioned in the centered and content wrap in container  */
 .contactLinks {
   display: flex;
   justify-content: center;
   order:2;
   flex-wrap: wrap;
   border-top: 3px darkslategray solid;
-  max-width: 90%; /* Adjust this value as needed */
-  margin: 0 auto; /* Center the section horizontally */
+  max-width: 90%;
+  margin: 0 auto; 
 }
-
+/* Contact links font-size, color and padding  */
 .contactLinks a{
   font-size:20px;
   color:darkslategrey; 
@@ -342,8 +342,8 @@ background-color:darkslategray;
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 90%; /* Adjust this value as needed */
-      margin: 0 auto; /* Center the section horizontally */
+      max-width: 90%; 
+      margin: 0 auto; 
     }
     
     #aboutHeading {
@@ -363,7 +363,7 @@ background-color:darkslategray;
     .projectsGrid {
       grid-template-rows: 300px 200px 200px;
       grid-template-columns: minmax(50%, 250px)  minmax(50%, 250px)  minmax(50%, 250px) minmax(50%, 250px);
-      max-width: 90%; /* Adjust this value as needed */
+      max-width: 90%; 
       margin-right:0 auto;
       border-top: darkslategray 3px solid;
       border-left: 0;
@@ -415,8 +415,8 @@ background-color:darkslategray;
       gap:30px;
       flex-wrap: wrap;
       border-top: 3px darkslategray solid;
-      max-width: 90%; /* Adjust this value as needed */
-      margin: 0 auto; /* Center the section horizontally */
+      max-width: 90%; 
+      margin: 0 auto;
     }
     
     .contactLinks a{
@@ -428,8 +428,8 @@ background-color:darkslategray;
   }
 
 
-/* This is a breakpoint*/
-/* Media query for Desktop screen size -----------------------------------------------------------------------------*/
+
+/* Media query for Desktop screen size */
 @media screen and (min-width: 900px) {
 
     .navBar {
