@@ -1,0 +1,553 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Mobile first approach - code for mobile screen */
+
+/* Navigation Bar - Header - Flexbox */
+.navBar {
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+background-color:darkslategray;
+
+
+}
+/* Main logo name */
+.navBarLeft {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-color: darkseagreen;
+  color: darkslategray;
+  width:100%;
+}
+
+/* Navigation bar with relative links*/
+.navBarRight {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  width: 90%;
+}
+/* Unordered list style */
+.navBar li{
+  list-style-type:none;
+}
+/* Unordered list items links style*/
+.navBar li a{
+  display:block;
+  font-size:20px;
+  color: aliceblue; 
+  padding:10px;
+}
+/* Size and margin of Main logo*/
+.main-logo{
+  font-size: 25px;
+  margin: 5px;
+}
+/* Hero Banner - Flexbox*/
+.heroBanner {
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  background-size: cover;
+  background-image:url("/assets/images/codioful.png") ;
+  background-repeat: no-repeat;
+  height:150px;
+  width:100%;
+  margin-bottom: 20px;
+}
+/* Banner - Flexbox*/
+#banner {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* Headline (for subtitle)*/
+.headline{
+  display:flex;
+  padding:20px;
+  margin:10px;
+}
+
+.headline {
+  background-color: rgba(255, 255, 255, 0.7); 
+  /* Semi-transparent white background */
+  padding: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0;
+  border-bottom:none;
+}
+
+/* Grid CSS */ 
+
+.page-wrapper {
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+  width: 100%;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+#aboutHeading {
+  order:1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#aboutParagraph {
+  display: flex;
+  justify-content: center;
+  order: 2;
+  padding:20px;
+  border-top: 3px darkslategray solid;
+}
+
+.projectsGrid {
+  display:grid;
+  max-width: 90%; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the section horizontally */
+  padding:20px;
+  border-top: 3px darkslategray solid;
+  gap:10px;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  grid-template-columns: minmax(90%, 360px);
+  grid-template-areas:
+  "featured-project"
+  "project1"
+  "project2"
+  "project3"
+  "project4"
+  ;
+}
+
+#workHeading {
+  display: grid;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#featured-project {
+  grid-area: featured-project;
+  background-image: url("/assets/images/horiseon.png");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+#project1 {
+  grid-area: project1;
+  background-image: url("/assets/images/study-guide-console-snap.png");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+#project2 {
+  grid-area: project2;
+  background-image:url("/assets/images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+#project3 {
+  grid-area:project3;
+  background-image:url("/assets/images/surfer.jpeg");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+#project4 {
+  grid-area:project4;
+  background-image: url("/assets/images/forest.jpeg");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.projectsGrid a {
+  text-decoration: none;
+}
+
+.heading, 
+.headingFeatProject {
+  display:flex;
+  background-color: darkseagreen;
+  margin:10px;
+  padding:10px;
+  max-width:fit-content;
+  color: darkslategray;
+  display: block;
+}
+
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactHeading {
+  order:1;
+  margin-top: 10px;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  order:2;
+  flex-wrap: wrap;
+  border-top: 3px darkslategray solid;
+  max-width: 90%; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+.contactLinks a{
+  font-size:20px;
+  color:darkslategrey; 
+  padding:10px;
+}
+
+/* Media query for tablet screen size */
+@media (min-width: 768px) {
+  .navBar {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color:darkslategray;
+    
+    
+    }
+    /* Main logo name */
+    .navBarLeft {
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      background-color: darkseagreen;
+      color: darkslategray;
+      width:100%;
+    }
+    
+    /* Navigation bar with relative links*/
+    .navBarRight {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items:center;
+      width: 100%;
+    }
+    /* Unordered list style */
+    .navBar li{
+      list-style-type:none;
+    }
+    /* Unordered list items links style*/
+    .navBar li a{
+      font-size:20px;
+      color: aliceblue; 
+      gap:10px;
+    }
+    /* Size and margin of Main logo*/
+    .main-logo{
+      font-size: 25px;
+      margin: 5px;
+    }
+    /* Hero Banner - Flexbox*/
+    .heroBanner {
+      display:flex;
+      flex-direction: column;
+      justify-content:flex-end;
+      align-items: center;
+      background-size: cover;
+      background-image:url("/assets/images/codioful.png");
+      background-repeat: no-repeat;
+      height:300px;
+      width:100%;
+      margin-bottom: 20px;
+    }
+    /* Banner - Flexbox*/
+    #banner {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    /* Headline (for subtitle)*/
+    .headline{
+      display:flex;
+      padding:20px;
+      margin:10px;
+    }
+    
+    .headline {
+      background-color: rgba(255, 255, 255, 0.7); 
+      /* Semi-transparent white background */
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .subtitle {
+      margin: 0;
+      border-bottom:none;
+    }
+    
+    /* Grid CSS */ 
+    
+    .page-wrapper {
+      display:flex;
+      flex-direction:column;
+      align-content: center;
+      width: 100%;
+    }
+    
+    .aboutMe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 90%; /* Adjust this value as needed */
+      margin: 0 auto; /* Center the section horizontally */
+    }
+    
+    #aboutHeading {
+      order:1;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    #aboutParagraph {
+      display: flex;
+      justify-content: center;
+      order: 2;
+      padding:20px;
+      border-top: 3px darkslategray solid;
+    }
+
+    .projectsGrid {
+      grid-template-rows: 300px 200px 200px;
+      grid-template-columns: minmax(50%, 250px)  minmax(50%, 250px)  minmax(50%, 250px) minmax(50%, 250px);
+      max-width: 90%; /* Adjust this value as needed */
+      margin-right:0 auto;
+      border-top: darkslategray 3px solid;
+      border-left: 0;
+      padding-left: 10px;
+      grid-template-areas:
+        "featured-project featured-project "
+        "project1 project2"
+        "project3 project4"
+        ;
+      }
+    
+    #workHeading {
+      display: grid;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .projectsGrid a {
+      text-decoration: none;
+    }
+    
+    .heading, 
+    .headingFeatProject {
+      display:flex;
+      background-color: darkseagreen;
+      margin:10px;
+      padding:10px;
+      max-width:fit-content;
+      color: darkslategray;
+      display: block;
+    }
+    
+    .contactMe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contactHeading {
+      order:1;
+      margin-top: 10px;
+    }
+    
+    .contactLinks {
+      display: flex;
+      justify-content: center;
+      order:2;
+      gap:30px;
+      flex-wrap: wrap;
+      border-top: 3px darkslategray solid;
+      max-width: 90%; /* Adjust this value as needed */
+      margin: 0 auto; /* Center the section horizontally */
+    }
+    
+    .contactLinks a{
+      font-size:20px;
+      color:darkslategrey; 
+      padding:10px;
+    }
+
+  }
+
+
+/* This is a breakpoint*/
+/* Media query for Desktop screen size -----------------------------------------------------------------------------*/
+@media screen and (min-width: 900px) {
+
+    .navBar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navBarLeft {
+        margin-bottom: 0;
+        width: 20%;
+        text-align: center;
+    }
+
+    .navBarRight {
+        justify-content: flex-start;
+        margin-right:20px;
+}
+
+.heroBanner {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#banner {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+  .projectsGrid {
+    grid-template-rows: 300px 200px 200px;
+    grid-template-columns: minmax(50%, 250px)  minmax(50%, 250px)  minmax(50%, 250px) minmax(50%, 250px);
+    border-top: 0;
+    border-left: darkslategray 3px solid;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-right:26px;
+    margin-top: 0;
+    grid-template-areas:
+      "featured-project featured-project featured-project featured-project"
+      "project1 project2"
+      "project3 project4"
+      ;
+    }
+
+    .aboutMe {
+      display:flex;
+      flex-direction:row;
+    }
+
+    #aboutHeading {
+      margin-top: 10px;
+      margin-right: 30px;
+    }
+    
+    #aboutParagraph {
+      border-top: 0;
+      border-left:3px darkslategray solid;
+      margin-left:20.5px;
+    }
+
+    #workHeading {
+      display: grid;
+      grid-template-columns: 25%;
+      justify-content: stretch;
+      align-content: end;
+      margin-top: 50px;
+      margin-left: 60px;
+      margin-bottom: -60px;
+
+    }
+
+   
+  .heading{
+   align-items: center;
+   display: block;
+   position: relative;
+   width:11.25em;
+   top:6.875em;
+   left:-10px;
+   padding:10px;
+  }
+
+.headingFeatProject{
+   align-items: center;
+   display:block;
+   width:11.25em;
+   position: relative;
+   top:210px;
+   left:-10px;
+   padding:10px;
+}
+
+.contactMe {
+  display: flex;
+  flex-direction: row;
+  padding:20px;
+}
+
+.contactHeading {
+  order:1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contactLinks {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 25.8px;
+  order:2;
+  gap:100px;
+  justify-content: space-evenly;
+  padding-left:150px;
+  border-left: 3px darkslategray solid;
+  border-top: 0;
+}
+
+.contactLinks a{
+  font-size:20px;
+  color:darkslategrey; 
+  padding:10px;
+}
+}
+
+
+
