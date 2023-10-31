@@ -190,7 +190,7 @@ background-color:darkslategray;
 /* Project 3 image source and border radius  */
 #project3 {
   grid-area:project3;
-  background-image:url("../../assets/images/surfer.jpeg");
+  background-image:url("../../assets/images/02-portfolio-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -198,7 +198,7 @@ background-color:darkslategray;
 /* Project 4 image source and border radius  */
 #project4 {
   grid-area:project4;
-  background-image: url("../../assets/images/02-run-buddy.jpg");
+  background-image: url("../../assets/images/surfer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
