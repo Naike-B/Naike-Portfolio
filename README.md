@@ -13,10 +13,7 @@ N/A
 
 ## Usage
 
-To use this page, navigate to [Naike-Portfolio](https://naike-b.github.io/Naike-Portfolio/) . You can use the links at the top (on the right hand side), to be redirected to the relative section of the page where you can review the content related to the selected topic. See an example below:
-
-
-More content can be found displayed on the right hand side of the page. See below:
+To use this page, navigate to [Naike-Portfolio](https://naike-b.github.io/Naike-Portfolio/) . You can use the links at the top (on the right hand side), to be redirected to the relative section of the page where you can review the content related to the selected topic. 
 
 ## Credits
 
