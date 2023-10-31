@@ -75,7 +75,7 @@ background-color:darkslategray;
   justify-content:flex-end;
   align-items: center;
   background-size: cover;
-  background-image:url("/assets/images/codioful.png") ;
+  background-image:url("/assets/images/codioful.png");
   background-repeat: no-repeat;
   height:150px;
   width:100%;
@@ -167,6 +167,7 @@ background-color:darkslategray;
 #featured-project {
   grid-area: featured-project;
   background-image: url("/assets/images/horiseon.png");
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px;
 }
@@ -175,6 +176,7 @@ background-color:darkslategray;
   grid-area: project1;
   background-image: url("/assets/images/study-guide-console-snap.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
 }
 
@@ -182,6 +184,7 @@ background-color:darkslategray;
   grid-area: project2;
   background-image:url("/assets/images/02-portfolio-1.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
 }
 
@@ -189,13 +192,15 @@ background-color:darkslategray;
   grid-area:project3;
   background-image:url("/assets/images/surfer.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
 }
 
 #project4 {
   grid-area:project4;
-  background-image: url("/assets/images/forest.jpeg");
+  background-image: url("/assets/images/02-run-buddy.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
 }
 
@@ -292,7 +297,6 @@ background-color:darkslategray;
       justify-content:flex-end;
       align-items: center;
       background-size: cover;
-      background-image:url("/assets/images/codioful.png");
       background-repeat: no-repeat;
       height:300px;
       width:100%;
