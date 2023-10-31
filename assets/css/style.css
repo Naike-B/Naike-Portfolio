@@ -166,7 +166,7 @@ background-color:darkslategray;
 
 #featured-project {
   grid-area: featured-project;
-  background-image: url("../assets/images/horiseon.png");
+  background-image: url("../../assets/images/horiseon.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px;
